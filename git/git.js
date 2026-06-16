@@ -1,0 +1,17 @@
+//* git config --global --list
+//* git config --global user.name"<username?>"
+//* git config --global user.email "<github_email>"
+//* git config --global init.defaultbranch 'main'
+
+//?instializer local git repo
+//* git init   // instialized empty git repository
+
+//? git working flow
+//* working directory   ->      staging   ->   local repo
+//local change                 redy state        new version
+
+
+//?
+//*git status     ->
+//*git add <file_path>
+//* git commit -m "<commit_message>"

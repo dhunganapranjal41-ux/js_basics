@@ -1,0 +1,34 @@
+In computing, an execution context is the environment in which code is executed. It contains the information needed for \the
+ program to run correctly, such as:
+
+Variables and their values
+Function parameters
+The current scope
+The call stack
+this binding (in languages like JavaScript)
+Instruction pointer/program counter (at a lower level)
+                                                                                                                                            
+
+  // static mr                                                                                                                          
+  static method
+ /// A method that belongs to the class, not its instances. not in object it is releted to class
+  // it is called with the name of class
+  getter setter
+   //Used to update a property value.(ssetter method)
+   //A getter is used to get/read a property value.
+  this keyword 
+  //this refers to the object that is currently calling the method.
+
+   class
+   //A Class is a blueprint or template used to create objects. It defines the properties (data) and methods (functions) that
+    objects will have.
+
+
+callback functions
+A callback function is a function passed as an argument to another function and executed later.
+
+
+
+The Event Loop is a mechanism in JavaScript that allows asynchronous operations to be executed even though 
+JavaScript is single-threaded.
+
