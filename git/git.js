@@ -21,6 +21,7 @@
 
 
 //? rebase
+
 //! main:a -> b -> c -> f -> g ->
 //! test:    c -> d -> e
 //! test :    c -> f -> g -> d' -> e'
@@ -32,5 +33,3 @@
 //! main: A -> B-> C -> F -> G 
 //! fix :     C -> D -> E
 
-
-//
