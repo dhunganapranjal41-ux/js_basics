@@ -33,3 +33,16 @@
 //! main: A -> B-> C -> F -> G 
 //! fix :     C -> D -> E
 
+
+//! git reset <commit_id>
+//* git reset --soft 
+//*git reset <commit_id>
+//*git reset <commit_id>
+
+
+//! -> pull request
+//* main -> production
+//* develop -> integration
+//* feature/  -> feature/login
+//* fix -> fix/
+//* hotfix -> hotfixl
