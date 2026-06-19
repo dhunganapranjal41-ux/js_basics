@@ -15,3 +15,22 @@
 //*git status     ->
 //*git add <file_path>
 //* git commit -m "<commit_message>"
+
+//*git log
+//* git log --oneline 
+
+
+//? rebase
+//! main:a -> b -> c -> f -> g ->
+//! test:    c -> d -> e
+//! test :    c -> f -> g -> d' -> e'
+
+//git rebase <branch>
+
+
+//* cheery-pick <commit-id>
+//! main: A -> B-> C -> F -> G 
+//! fix :     C -> D -> E
+
+
+//
