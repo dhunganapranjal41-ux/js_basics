@@ -1,48 +1,98 @@
+//! git / github
+//* distributed vcs
+//
+
+// github , gitlab , bitbucket , ..
+
+//* repository
+// local ->
+// remote ->
+
+//* branching
+// login
+// register
+// dashboard
+// bug fix
+
+//* version
+//
+
+//! git commands
+//? config
 //* git config --global --list
-//* git config --global user.name"<username?>"
+//* git config --global user.name "<username>"
 //* git config --global user.email "<github_email>"
 //* git config --global init.defaultbranch 'main'
 
-//?instializer local git repo
-//* git init   // instialized empty git repository
+//? initialize local git repo
+//* git init      // Initialized empty Git repository
 
 //? git working flow
-//* working directory   ->      staging   ->   local repo
-//local change                 redy state        new version
-
+//* working directory      ->    staging area     ->  local repo     ->       remote repo
+//  local changes                ready state        new version
 
 //?
-//*git status     ->
-//*git add <file_path>
+//* git status                                      ->
+//* git add <file_path>
+//* git add  .
 //* git commit -m "<commit_message>"
 
-//*git log
-//* git log --oneline 
+//? github
+//* git remote -v   ->
+//* git remote add origin <remote_repo_url>
+//* git remote remove origin
+//* git push origin <branch_name>  // git push origin main
+//* git pull origin <branch_name>  // git pull origin main
 
+//? ignore
+//* .gitignore file
+
+//? branching
+//* git branch  -> list all local branches
+//* git branch <branch_name>   -> create new branch
+//* git branch -d <branch_name>   -> delete branch / soft
+//* git branch -D <branch_name>   -> delete branch / hard
+//* git switch <branch_name>   -> switch between branches
+//* git switch -c <branch_name>   -> create & switch  to new branch
+//* git checkout <branch name>  -> switch between branches
+//* git checkout -b <branch_name>   -> create & switch  to new branch
+
+//? merge
+//*  git merge <branch_name>
+
+//* git log
+//* git log --oneline
 
 //? rebase
+//! main: A -> B -> C -> F ->G
+//! test :           C -> D -> E
+//! test :           C -> F ->G -> D' -> E'  // rebase
 
-//! main:a -> b -> c -> f -> g ->
-//! test:    c -> d -> e
-//! test :    c -> f -> g -> d' -> e'
+// git rebase <branch>
 
-//git rebase <branch>
+//* cherry-pick <commit-id>
+//? git cherry-pick a0c3976
+//! main: A -> B -> C -> F ->G -> D'
+//! fix :           C -> D -> E
 
+// reset  ->
+//* git reset <commit_id>
+//* git reset --soft <commit_id>
+//* git reset --mixed <commit_id>
+//* git reset --hard <commit_id>
+//
+//! fix : C -> D -> E
 
-//* cheery-pick <commit-id>
-//! main: A -> B-> C -> F -> G 
-//! fix :     C -> D -> E
+//? revert
+//* git revert <commit_id>
+//! fix : C -> D -> E -> D'
 
+//? git  restore <file_name>
 
-//! git reset <commit_id>
-//* git reset --soft 
-//*git reset <commit_id>
-//*git reset <commit_id>
+//! PR  -> Pull Request
 
-
-//! -> pull request
 //* main -> production
 //* develop -> integration
-//* feature/  -> feature/login
-//* fix -> fix/
-//* hotfix -> hotfixl
+//* feature/  ->  feature/login
+//* fix      ->  fix/
+//* hotfix   -> h
